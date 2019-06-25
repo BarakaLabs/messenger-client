@@ -4,8 +4,8 @@
     <AssemblyTitle>Facebook Messenger .NET Client With GraphQL Version</AssemblyTitle>
     <Authors>Andrew Kamarouski, Eşref Küçüktorun</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Messenger.Client.V2</AssemblyName>
-    <PackageId>Messenger.Client.V2</PackageId>
+    <AssemblyName>Messenger.Client.V2.Extensions</AssemblyName>
+    <PackageId>Messenger.Client.V2.Extensions</PackageId>
     <PackageTags>facebook;messenger;chatbot;bot</PackageTags>
     <PackageProjectUrl>https://github.com/barakalabs/messenger-client</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
@@ -24,7 +24,5 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
     <PackageReference Include="NETStandard.Library" Version="2.0.1" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Messenger.Client\Messenger.Client.csproj" />
-  </ItemGroup>
+  
 </Project>
