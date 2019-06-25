@@ -27,7 +27,9 @@ public class Startup {
 	public void ConfigureServices(IServiceCollection services)
     {
     	...
-        services.AddMessengerClient("%ACCESS_TOKEN%");
+        services.AddMessengerClient("%ACCESS_TOKEN%","%URL_BASE%");
+	
+	//URL_BASE like https://graph.facebook.com/v3.3
     }
 }
 ``````
