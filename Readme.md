@@ -1,6 +1,6 @@
 # Facebook Messenger .NET Client
 
-A .NET Core client for Facebook Messenger platform.
+A .NET Core client for Facebook Messenger platform. With GraphQL version
 
 ### Installation
 
