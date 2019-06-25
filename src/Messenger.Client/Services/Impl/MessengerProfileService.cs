@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Messenger.Client.Config;
 using Messenger.Client.Objects;
 using Messenger.Client.Utilities;
 
@@ -9,7 +10,7 @@ namespace Messenger.Client.Services.Impl
 {
     public class MessengerProfileService : MessengerServiceBase, IMessengerProfileService
     {
-        private const string UrlTemplate = "https://graph.facebook.com/v2.6/me/messenger_profile?access_token={0}";
+        private String UrlTemplate = MessengerConfig.UrlBase + "/me/messenger_profile?access_token={0}";
 
 
         public MessengerProfileService(IMessengerSerializer serializer) : base(serializer)

@@ -9,11 +9,15 @@ namespace Messenger.Client.Extensions
 {
     public static class ServicesExtensions
     {
-        public static void AddMessengerClient(this IServiceCollection services, String accessToken = "")
+        public static void AddMessengerClient(this IServiceCollection services, String accessToken = "", String urlBase = "")
         {
             if (!String.IsNullOrEmpty(accessToken))
             {
                 MessengerConfig.AccessToken = accessToken;
+            }
+            if (!String.IsNullOrEmpty(urlBase))
+            {
+                MessengerConfig.UrlBase = urlBase;
             }
 
             services.AddSingleton<IMessengerSerializer, JsonMessengerSerializer>();

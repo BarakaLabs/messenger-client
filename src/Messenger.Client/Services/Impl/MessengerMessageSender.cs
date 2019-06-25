@@ -11,7 +11,7 @@ namespace Messenger.Client.Services.Impl
 {
     public class MessengerMessageSender : IMessengerMessageSender
     {
-        private const String UrlTemplate = "https://graph.facebook.com/v2.6/me/messages?access_token={0}";
+        private String UrlTemplate = MessengerConfig.UrlBase + "/me/messages?access_token={0}";
 
         private readonly HttpClient client;
         private readonly IMessengerSerializer serializer;

@@ -9,7 +9,7 @@ namespace Messenger.Client.Services.Impl
 {
     public class MessengerProfileProvider : IMessengerProfileProvider
     {
-        private const String UrlTemplate = "https://graph.facebook.com/v2.6/{0}?access_token={1}";
+        private  String UrlTemplate = MessengerConfig.UrlBase + "/{0}?access_token={1}";
 
         private readonly HttpClient client = new HttpClient();
         private readonly IMessengerSerializer serializer;

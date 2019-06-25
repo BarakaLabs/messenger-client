@@ -1,25 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>ASP.NET Core extensions for Facebook MessengerThreadSettings Platform .NET client. GitHub Repository: https://github.com/kamarouski/messenger-client</Description>
-    <AssemblyTitle>Facebook Messenger .NET Client ASP.NET Core Extensions</AssemblyTitle>
-    <Authors>Andrew Kamarouski</Authors>
+    <Description>.NET Client for Facebook Messenger Platform. GitHub Repository: https://github.com/barakalabs/messenger-client</Description>
+    <AssemblyTitle>Facebook Messenger .NET Client With GraphQL Version</AssemblyTitle>
+    <Authors>Andrew Kamarouski, Eşref Küçüktorun</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Messenger.Client.Extensions</AssemblyName>
-    <PackageId>Messenger.Client.Extensions</PackageId>
+    <AssemblyName>Messenger.Client.V2</AssemblyName>
+    <PackageId>Messenger.Client.V2</PackageId>
     <PackageTags>facebook;messenger;chatbot;bot</PackageTags>
-    <PackageProjectUrl>https://github.com/kamarouski/messenger-client</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/barakalabs/messenger-client</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/kamarouski/messenger-client</RepositoryUrl>
+    <RepositoryUrl>https://github.com/barakalabs/messenger-client</RepositoryUrl>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <Version>0.6.0</Version>
+    <Version>0.8.0</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Messenger.Client" Version="0.6.0" />
+    <PackageReference Include="Messenger.Client.V2" Version="0.8.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
     <PackageReference Include="NETStandard.Library" Version="2.0.1" />
   </ItemGroup>
